@@ -1,0 +1,289 @@
+body {
+    background-color: #090656;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+
+#trending-songs::-webkit-scrollbar-track {
+    background-color: #5f0b4360;
+    border-radius: 10px;
+}
+
+
+#trending-songs::-webkit-scrollbar-thumb {
+    background-color: #5f0b43;
+    border-radius: 10px;
+}
+
+
+#trending-songs::-webkit-scrollbar-thumb:hover {
+    background-color: #5f0b43;
+}
+
+#your-playlists::-webkit-scrollbar-track,
+#curated-playlists::-webkit-scrollbar-track {
+    background-color: #0906567a;
+    border-radius: 10px;
+}
+
+#your-playlists::-webkit-scrollbar-thumb,
+#curated-playlists::-webkit-scrollbar-thumb {
+    background-color: #090656;
+    border-radius: 10px;
+}
+
+#your-playlists::-webkit-scrollbar-thumb:hover,
+#curated-playlists::-webkit-scrollbar-thumb:hover {
+    background-color: #090656;
+}
+
+main {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: 60px;
+    background-color: #130888;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+}
+
+li {
+    display: inline-block;
+    inline-size: 150px;
+    padding-left: 20px;
+    color: white;
+    font-size: 20px;
+    text-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+    float: top;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#websitename {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    padding-right: 100px;
+}
+
+#secondheader {
+    background-color: #001861;
+    color: white;
+    font-size: 18px;
+    padding: 10px 50px;
+}
+
+#secondheader p {
+    margin-top: 5px;
+}
+
+#smoothjazz {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+#trending {
+    padding: 20px 0;
+    background-color: white;
+    color: #5f0b43;
+}
+
+#trending p {
+    margin: 12px;
+    font-size: 18px;
+}
+
+#trending>p {
+    font-weight: bold;
+}
+
+#trending button {
+    background-color: #5f0b43;
+    color: white;
+    margin-top: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 80%;
+    font-size: 20px;
+}
+
+#trending-songs {
+    display: flex;
+    overflow-x: auto;
+    margin-left: 10px;
+}
+
+.album-cover {
+    position: relative;
+    background-color: #c3c3c3;
+    padding-bottom: 5px;
+}
+
+.album-cover>audio {
+    position: absolute;
+    z-index: 9999;
+    left: 20px;
+    bottom: 180px;
+}
+
+.song {
+    margin-right: 20px;
+}
+
+.song img {
+    height: 300px;
+}
+
+#transition {
+    display: flex;
+    align-items: center;
+    background: white;
+    color: #5f0b43;
+}
+
+#transition h2 {
+    margin-left: 5%;
+}
+
+#transition h3 {
+    margin-left: 32%;
+}
+
+#playlists {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+#your-playlists,
+#curated-playlists {
+    width: 45%;
+    height: 500px;
+    overflow-y: auto;
+}
+
+#your-playlists>div,
+#curated-playlists>div {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+    padding: 10px;
+    background-color: #098cf6;
+    color: white;
+}
+
+#your-playlists>div>img,
+#curated-playlists>div>img {
+    width: 50%;
+}
+
+#your-playlists>div>dl,
+#curated-playlists>div>dl {
+    width: 50%;
+}
+
+#your-playlists>div dt,
+#curated-playlists>div dt {
+    font-size: 20px;
+}
+
+#your-playlists>div dd,
+#curated-playlists>div dd {
+    margin: 0;
+}
+
+#your-playlists {
+    background: #2097f4;
+    padding: 10px;
+    width: 100%;
+}
+
+#curated-playlists>div {
+    background-color: #0d0770;
+}
+
+#curated-playlists {
+    background: #130789;
+    padding: 10px;
+    width: 100%;
+}
+
+.footer {
+    background-color: white;
+}
+
+.footer button {
+    background-color: #5f0b43;
+    color: white;
+    margin-top: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 25%;
+    font-size: 20px;
+}
+
+footer {
+    background: white;
+    padding: 20px 0px;
+    text-align: center;
+    color: #5f0b43;
+}
+
+@media screen and (max-width: 1152px) {
+    #websitename {
+        font-size: 25px;
+        padding-right: 0px;
+    }
+
+    .footer button {
+        margin-left: 15%;
+    }
+
+    #trending button {
+        margin-left: 70%;
+    }
+
+    #your-playlists>div,
+    #curated-playlists>div {
+        flex-direction: column;
+    }
+
+    #your-playlists>div>img,
+    #curated-playlists>div>img {
+        width: 100%;
+    }
+
+    #your-playlists>div>dl,
+    #curated-playlists>div>dl {
+        width: 100%;
+    }
+}
